@@ -1,5 +1,5 @@
 {
-  "name": "@mtsaas/db",
+  "name": "@mtsaas/rbac",
   "version": "0.0.0",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -7,6 +7,8 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.95.3"
+    "@mtsaas/db": "workspace:*",
+    "@mtsaas/cache": "workspace:*",
+    "zod": "^4.3.6"
   }
 }
